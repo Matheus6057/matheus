@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="produto.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/68/68948.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+               <li><a href="produto.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+<br><br>
+    <main>
+        <!-- Seção do produto -->
+        <section class="produto">
+            <!-- Div que contém as imagens do produto -->
+            <div class="imagens-produto">
+                <!-- Imagem principal do produto -->
+                <img src="https://http2.mlstatic.com/D_NQ_NP_842886-MLB70942501041_082023-O.webp" alt="Produto principal" class="imagem-principal" id="imagem-principal">
+                
+                <!-- Miniaturas das imagens -->
+                <div class="miniaturas">
+                    <img src="https://m.media-amazon.com/images/I/21P1wprquFL._SR240,220_.jpg" alt="Miniatura 1" class="miniatura" data-imagem="https://m.media-amazon.com/images/I/21P1wprquFL._SR240,220_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/21pO60G7P7L._AC_SY350_.jpg" alt="Miniatura 2" class="miniatura" data-imagem="https://m.media-amazon.com/images/I/21pO60G7P7L._AC_SY350_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/41cf2S43ujL._AC_SX569_.jpg" alt="Miniatura 3" class="miniatura" data-imagem="https://m.media-amazon.com/images/I/41cf2S43ujL._AC_SX569_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/41NR8yo2aSL._AC_SX569_.jpg" alt="Miniatura 4" class="miniatura" data-imagem="https://m.media-amazon.com/images/I/41NR8yo2aSL._AC_SX569_.jpg">
+                    <img src="https://m.media-amazon.com/images/I/41tJdQl6WbL._AC_SX569_.jpg" alt="Miniatura 5" class="miniatura" data-imagem="https://m.media-amazon.com/images/I/41tJdQl6WbL._AC_SX569_.jpg">
+                </div>
+            </div>
+    
+            <!-- Div que contém os detalhes do produto -->
+            <div class="detalhes-produto">
+                <!-- Nome do produto -->
+                <h2>Nome do Produto</h2>
+                
+                <!-- Descrição do produto -->
+                <p class="descricao">Esta é a descrição do produto. Ele é de alta qualidade e atende às suas necessidades.</p>
+                
+                <!-- Preço do produto -->
+                <p class="preco">R$ 149,99</p>
+    
+                <!-- Formulário para selecionar tamanho e cor do produto -->
+                <form class="opcoes-compra">
+                    <!-- Seleção de tamanho -->
+                    <label for="tamanho">Tamanho:</label>
+                    <select id="tamanho">
+                        <option>P</option>
+                        <option>M</option>
+                        <option>G</option>
+                        <option>GG</option>
+</select>
+
+<!-- Seleção de cor -->
+<label for="cor">Cor:</label>
+<select id="cor">
+    <option>Vermelho</option>
+    <option>Azul</option>
+    <option>Preto</option>
+    <option>Branco</option>
+    <option>Cinza</option>
+</select>
+
+<!-- Botão de comprar -->
+<button type="submit">Comprar</button>
+</form>
+</div>
+</section>
+
+<!-- Seção de comentários dos clientes -->
+<section class="comentarios">
+    <h3>Comentários dos clientes</h3> <!-- Título da seção de comentários -->
+  <br>
+    <!-- Comentário 1 -->
+    <div class="comentario">
+        <!-- Foto do usuário -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-daY2_t7oQz5HOOqOJ0bAER1fZCPSB17Yw&s" alt="Foto de Maria" class="foto-usuario">
+        <!-- Nome e depoimento do usuário -->
+        <p><strong>João:</strong> Ótimo produto, recomendo!</p>
+    </div>
+
+    <!-- Comentário 2 -->
+    <div class="comentario">
+        <!-- Foto do usuário -->
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAtOQL7EOGhzP1eu8lSoU4ns6Un6tlZBFwXA&s" alt="Foto de João" class="foto-usuario">
+        <!-- Nome e depoimento do usuário -->
+        <p><strong>Maria:</strong> Muito bom, superou minhas expectativas.</p>
+    </div>
+</section>
+</main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+            <h4>Sobre Mim</h4>
+            <p>Sou um adolescente buscando completar meu curso e buscar meu sonho a fora</p>
+        </div>
+       
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: crvalomatheus@gmail.com</p>
+            <p>Telefone: (19)99592-9140</p>
+        </div>
+        <div class="footer-section">
+            <h4>Me Siga</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/0theu_00/" target="_blank">instagram</a>
+            </div>
+        </div></div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

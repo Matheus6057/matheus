@@ -1,17 +1,16 @@
-const express = require ('express');
-const path = require ('path');
+// Seleciona a imagem principal
+const imagemPrincipal = document.getElementById('imagem-principal');
 
-const app = express()
-const port = 3000;
+// Seleciona todas as miniaturas
+const miniaturas = document.querySelectorAll('.miniatura');
 
-app.use (express.static(path.join(__dirname,'Public')));
-
-app.get ('/', (req, res)=>{
-    res.sendFile(path.join(__dirname,'Public','meu.html'));
+// Adiciona um evento de clique para cada miniatura
+miniaturas.forEach(miniatura => {
+    miniatura.addEventListener('click', function() {
+        // Pega o valor do atributo 'data-imagem' da miniatura clicada
+        const novaImagem = this.getAttribute('data-imagem');
+        
+        // Substitui a imagem principal pela imagem da miniatura clicada
+        imagemPrincipal.src = novaImagem;
+    });
 });
-app.get('/sobre',(req,res)=>{
-    res.sendFile(path.join(__dirname,'Public','novo.html'));
-});
-app.listen (port, ()=>{
-    console.log (`Servidor Rodando na em http://127.0.0.1:${port}`)
-})

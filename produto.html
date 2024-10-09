@@ -17,6 +17,53 @@
     </header>
 <br><br>
     <main>
+
+         <!-- Seção do carrinho -->
+    <section class="carrinho">
+        <!-- Tabela de produtos no carrinho -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Quantidade</th>
+                    <th>Preço Unitário</th>
+                    <th>Total</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Produto 1 -->
+                <tr>
+                    <td>Conjunto de Camias</td>
+                    <td>
+                        <input type="number" value="1" min="1" class="quantidade">
+                    </td>
+                    <td class="preco-unitario">R$ 149,99</td>
+                    <td class="preco-total">R$ 149,99</td>
+                    <td>
+                        <button class="remover-produto">Remover</button>
+                    </td>
+                </tr>
+                <!-- Produto 2 -->
+                <tr>
+                    <td>Camisa Sozinha</td>
+                    <td>
+                        <input type="number" value="2" min="1" class="quantidade">
+                    </td>
+                    <td class="preco-unitario">R$ 30,00</td>
+                    <td class="preco-total">R$ 60,00</td>
+                    <td>
+                        <button class="remover-produto">Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-final">
+            <h3>Total Final:</h3>
+            <span id="total-final">R$ 110,00</span>
+        </div>
+    </section>
+
         <!-- Seção do produto -->
         <section class="produto">
             <!-- Div que contém as imagens do produto -->
